@@ -17,8 +17,6 @@ public class EwalletLinked {
     private Date linkedDatetime;
     @Column(name="account_number")
     private String accountNumber;
-    @Column(name="transaction_id")
-    private String transactionId;
     @Column(name="ewallet_id")
     private String ewalletId;
     @Column(name="linked_status")

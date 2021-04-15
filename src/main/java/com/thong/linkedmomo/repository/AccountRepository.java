@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Integer> {
     public Account findByCifAndAccountNumber(String cif, String accountNumber);
+    public Account findByAccountNumber(String accountNumber);
 }

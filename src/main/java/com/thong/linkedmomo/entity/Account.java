@@ -19,8 +19,8 @@ public class Account {
     private String accountNumber;
     @Column(name="account_type")
     private String accountType;
-    @Column(name="account_balance")
-    private BigDecimal accountBalance;
-    @Column(name="account_status")
-    private int accountStatus;
+    @Column(name="balance")
+    private BigDecimal balance;
+    @Column(name="status")
+    private int status;
 }

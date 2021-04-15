@@ -15,7 +15,6 @@ public class TransEwallet implements Serializable{
     @Id
     @Column(name="trans_id")
     private int transId;
-    @Id
     @Column(name="ewallet_id")
     private String ewalletId;
     @Column(name="account_number")
@@ -28,4 +27,6 @@ public class TransEwallet implements Serializable{
     private Date issueDate;
     @Column(name="expire_date")
     private Date expireDate;
+    @Column(name = "id_card_type")
+    private String idCardType;
 }
