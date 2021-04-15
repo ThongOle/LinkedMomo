@@ -23,8 +23,8 @@ public class Customer {
     private int sex;
     @Column(name="address")
     private String address;
-    @Column(name="customer_status")
-    private int customerStatus;
+    @Column(name="status")
+    private int status;
     @Column(name="id_card")
     private String idCard;
     @Column(name="issue_Date")

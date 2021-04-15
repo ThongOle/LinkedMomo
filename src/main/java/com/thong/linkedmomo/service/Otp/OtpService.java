@@ -5,5 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface OtpService {
-    Otp findByUserId(int userId);
+    Otp findByCif(String cif);
 }

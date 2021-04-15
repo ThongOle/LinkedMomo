@@ -10,8 +10,8 @@ public class OtpImpl implements OtpService{
     @Autowired
     OtpRepository otpRes;
     @Override
-    public Otp findByUserId(int userId) {
-        Otp otp = otpRes.findByUserId(userId);
+    public Otp findByCif(String cif) {
+        Otp otp = otpRes.findByCif(cif);
         return otp;
     }
 }

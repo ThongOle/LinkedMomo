@@ -31,11 +31,12 @@ public class EwalletController {
         String idCard = jsonVerify.get("idCard");
         String fullName = jsonVerify.get("fullName");
         String accountNumber = jsonVerify.get("accountNumber");
-        Customer objCustomer = customerSer.findByIdCard(idCard);
         Date date = new Date();
         Transaction objTrans = new Transaction();
         objTrans.setTransDate(date);
         objTrans.setTransType("verifyCustomer");
+
+        Customer objCustomer = customerSer.findByIdCard(idCard);
         // check customer exist
         if(objCustomer != null && objCustomer.getFullName().equals(fullName)){
             Account objAccount = accountSer.findByCifAndAccountNumber(objCustomer.getCif(), accountNumber);
